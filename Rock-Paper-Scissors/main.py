@@ -28,6 +28,8 @@ import random
 player = int(input("What do you choose? Type  0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 cpu = random.randint(0,2)
 result = ''
+if player >= 3 or player < 0: 
+  print("You typed an invalid number, you lose!") 
 if player == cpu: result = 'Draw'
 if player == 0:
     if cpu == 1: result = 'You lose'
